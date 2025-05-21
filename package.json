@@ -37,7 +37,7 @@
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api DocumentScannerPlugin --output-readme README.md --output-json dist/docs.json",
+    "docgen": "docgen --api DocumentScannerPlugin --output-readme README.md --output-json dist/docs.json  --project ./tsconfig.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
@@ -54,7 +54,7 @@
     "eslint": "^8.57.0",
     "prettier": "~2.3.0",
     "prettier-plugin-java": "~1.0.2",
-    "rimraf": "^3.0.2",
+    "rimraf": "3.0.2",
     "rollup": "^2.32.0",
     "swiftlint": "^1.0.1",
     "typescript": "~5.7.2"
