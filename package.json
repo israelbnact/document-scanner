@@ -1,5 +1,5 @@
 {
-  "name": "@henzealves/document-scanner",
+  "name": "@israelbnact/document-scanner",
   "version": "6.0.4",
   "description": "A Capacitor plugin that lets you scan documents using Android and iOS",
   "main": "dist/plugin.cjs.js",
@@ -11,16 +11,16 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "HenzealvesDocumentScanner.podspec"
+    "IsraelbnactDocumentScanner.podspec"
   ],
   "author": "David Marcus",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/henzealves/document-scanner.git"
+    "url": "git+https://github.com/israelbnact/document-scanner.git"
   },
   "bugs": {
-    "url": "https://github.com/henzealves/document-scanner/issues"
+    "url": "https://github.com/israelbnact/document-scanner/issues"
   },
   "keywords": [
     "capacitor",
@@ -37,7 +37,7 @@
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api DocumentScannerPlugin --output-readme README.md --output-json dist/docs.json  --project ./tsconfig.json",
+    "docgen": "docgen --api DocumentScannerPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
